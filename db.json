@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "book": "Harry Potter",
+      "author": "JK Rowling",
+      "comments": [
+        "Epic book",
+        "Nice Book"
+      ],
+      "id": 1
+    },
+    {
+      "book": "book2",
+      "author": "author2",
+      "comments": [
+        "very good"
+      ],
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
