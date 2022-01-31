@@ -24,9 +24,8 @@ btn.addEventListener("click", function (e) {
 });
 
 //-----------------------------------------------------
-
-function fetchData() {
-  fetch(`http://localhost:3000/posts`, {
+const fetchData = async function () {
+  await fetch(`http://localhost:3000/posts`, {
     method: "GET",
     headers: { "content-type": "application/json;charset=UTF-8" },
   })
@@ -35,7 +34,7 @@ function fetchData() {
       display(data);
     })
     .catch((err) => console.log(err));
-}
+};
 
 fetchData();
 function display(data_) {
